@@ -61,6 +61,14 @@ module.exports = Object.assign(jestConfig, {
 });
 ```
 
+## Credits
+
+Inspired by:
+
+- [react-scripts](https://github.com/facebook/create-react-app/tree/next/packages/react-scripts)
+- [kcd-scripts](https://github.com/kentcdodds/kcd-scripts)
+- [d-scripts](https://github.com/trae/d-scripts)
+
 ## License
 
 [MIT License](./LICENSE) © Anvilabs LLC
