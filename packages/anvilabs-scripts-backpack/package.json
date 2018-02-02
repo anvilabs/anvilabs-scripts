@@ -1,0 +1,44 @@
+{
+  "name": "anvilabs-scripts-backpack",
+  "version": "0.0.0-development",
+  "description": "Anvilabs' common scripts for our Backpack projects",
+  "keywords": [],
+  "repository": "anvilabs/anvilabs-scripts",
+  "homepage": "https://github.com/anvilabs/anvilabs-scripts#readme",
+  "bugs": {
+    "url": "https://github.com/anvilabs/anvilabs-scripts/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "https://yenbekbay.me"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "anvilabs-scripts-backpack": "src/index.js"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "extends": "semantic-release-monorepo"
+  },
+  "dependencies": {
+    "anvilabs-scripts-core": "^0.0.0-development",
+    "anvilabs-scripts-node": "^0.0.0-development",
+    "awesome-typescript-loader": "^3.4.1",
+    "backpack-core": "^0.5.0",
+    "cache-loader": "^1.2.0",
+    "cross-spawn": "^6.0.4",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "@semantic-release/npm": "2.6.0",
+    "semantic-release": "^12.4.1",
+    "semantic-release-monorepo": "^4.2.1"
+  }
+}

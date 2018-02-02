@@ -1,0 +1,3 @@
+{
+  "extends": "anvilabs-scripts-node/tslint.json"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "anvilabs-scripts-core",
+  "version": "0.0.0-development",
+  "description": "Core functions for Anvilabs' common scripts modules",
+  "keywords": [],
+  "repository": "anvilabs/anvilabs-scripts",
+  "homepage": "https://github.com/anvilabs/anvilabs-scripts#readme",
+  "bugs": {
+    "url": "https://github.com/anvilabs/anvilabs-scripts/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "https://yenbekbay.me"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "extends": "semantic-release-monorepo"
+  },
+  "dependencies": {
+    "anvilabs-scripts-node": "^0.0.0-development",
+    "arrify": "^1.0.1",
+    "chalk": "^2.3.0",
+    "cross-spawn": "^6.0.4",
+    "glob": "^7.1.2",
+    "lodash.has": "^4.5.2",
+    "read-pkg-up": "^3.0.0",
+    "yargs-parser": "^9.0.2"
+  },
+  "devDependencies": {
+    "@semantic-release/npm": "2.6.0",
+    "semantic-release": "^12.4.1",
+    "semantic-release-monorepo": "^4.2.1"
+  }
+}

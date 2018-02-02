@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": false,
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+
+  "eslint.autoFixOnSave": true,
+
+  "files.autoSave": "off",
+  "files.exclude": {
+    ".eslintcache": true
+  },
+
+  "prettier.disableLanguages": ["javascript"],
+}
