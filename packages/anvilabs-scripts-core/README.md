@@ -4,7 +4,6 @@
 [![Dependency Status](https://david-dm.org/anvilabs/anvilabs-scripts/status.svg?path=packages/eslint-config-core)](https://david-dm.org/anvilabs/anvilabs-scripts?path=packages/eslint-config-core)
 [![devDependency Status](https://david-dm.org/anvilabs/anvilabs-scripts/dev-status.svg?path=packages/eslint-config-core)](https://david-dm.org/anvilabs/anvilabs-scripts?path=packages/eslint-config-core&type=dev)
 
-🚧
 
 ## License
 
