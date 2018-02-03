@@ -33,6 +33,7 @@
     "@anvilabs/eslint-config-typescript": "^17.2.1",
     "@anvilabs/tslint-config": "^1.2.3",
     "@commitlint/cli": "^6.1.0",
+    "@types/jest": "^22.1.1",
     "anvilabs-scripts-core": "^0.1.0-alpha.1",
     "babel-core": "^6.26.0",
     "babel-plugin-lodash": "^3.3.2",
