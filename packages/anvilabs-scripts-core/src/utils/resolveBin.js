@@ -9,7 +9,7 @@ const resolveBin = (moduleName, {fromDir, executable}) => {
       cwd: fromDir,
     });
     if (!modulePkgPath) {
-      throw new new Error(`Cannot find module '${moduleName}'`)();
+      throw new Error(`Cannot find module '${moduleName}'`)();
     }
 
     const modulePkgDir = path.dirname(modulePkgPath);
