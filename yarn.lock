@@ -16,7 +16,7 @@
     eslint-plugin-typescript "^0.8.1"
     typescript-eslint-parser "^12.0.0"
 
-"@anvilabs/eslint-config@^17.2.1", "@anvilabs/eslint-config@^17.2.2":
+"@anvilabs/eslint-config@^17.2.2":
   version "17.2.2"
   resolved "https://registry.yarnpkg.com/@anvilabs/eslint-config/-/eslint-config-17.2.2.tgz#bbae6e190e0acc87979f6691cff9e19bb4138acb"
   dependencies:
@@ -104,7 +104,7 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@^6.0.5", "@commitlint/cli@^6.1.0":
+"@commitlint/cli@^6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-6.1.0.tgz#0a545088b4e0268cca1dca7e8ccd95bd55847b88"
   dependencies:
@@ -447,35 +447,21 @@ anvilabs-scripts-core@^0.1.0-alpha.1:
     read-pkg-up "^3.0.0"
     yargs-parser "^9.0.2"
 
-anvilabs-scripts-node@^0.1.0-alpha.1:
-  version "0.1.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.1.tgz#44522a007425f70b1ea5d6740865d7e04057a9d2"
+anvilabs-scripts-core@^0.1.0-alpha.3:
+  version "0.1.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.3.tgz#eb0623e710a94464f8046938e2db60d6d43b79e4"
   dependencies:
-    "@anvilabs/commitlint-config" "^1.0.0"
-    "@anvilabs/eslint-config" "^17.2.1"
-    "@anvilabs/eslint-config-typescript" "^17.2.1"
-    "@anvilabs/tslint-config" "^1.2.3"
-    "@commitlint/cli" "^6.0.5"
-    anvilabs-scripts-core "^0.0.0-development"
-    babel-core "^6.26.0"
-    babel-plugin-lodash "^3.3.2"
-    babel-plugin-module-resolver "^3.0.0"
-    babel-preset-env "^1.6.1"
+    arrify "^1.0.1"
+    chalk "^2.3.0"
     cross-spawn "^6.0.4"
-    eslint "^4.16.0"
-    husky "^0.14.3"
-    jest "^22.1.4"
-    lint-staged "^6.1.0"
-    lodash.merge "^4.6.0"
-    npm-run-all "^4.1.2"
-    prettier "^1.10.2"
-    ts-jest "^22.0.2"
-    tslint "^5.9.1"
-    tslint-language-service "^0.9.8"
-    typescript "^2.7.1"
+    glob "^7.1.2"
+    lodash.has "^4.5.2"
+    read-pkg-up "^3.0.0"
+    yargs-parser "^9.0.2"
 
-"anvilabs-scripts-node@file:./packages/anvilabs-scripts-node":
-  version "0.0.0-development"
+anvilabs-scripts-node@^0.1.0-alpha.3:
+  version "0.1.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.3.tgz#51c24320a015e21738bb300db089dbd62bf066a3"
   dependencies:
     "@anvilabs/commitlint-config" "^1.0.0"
     "@anvilabs/eslint-config" "^17.2.2"
@@ -496,10 +482,41 @@ anvilabs-scripts-node@^0.1.0-alpha.1:
     lodash.merge "^4.6.0"
     npm-run-all "^4.1.2"
     prettier "^1.10.2"
+    read-pkg-up "^3.0.0"
     ts-jest "^22.0.2"
     tslint "^5.9.1"
     tslint-language-service "^0.9.8"
     typescript "^2.7.1"
+    typesync "^0.2.5"
+
+"anvilabs-scripts-node@file:./packages/anvilabs-scripts-node":
+  version "0.0.0-development"
+  dependencies:
+    "@anvilabs/commitlint-config" "^1.0.0"
+    "@anvilabs/eslint-config" "^17.2.2"
+    "@anvilabs/eslint-config-typescript" "^17.2.1"
+    "@anvilabs/tslint-config" "^1.2.3"
+    "@commitlint/cli" "^6.1.0"
+    "@types/jest" "^22.1.1"
+    anvilabs-scripts-core "^0.1.0-alpha.3"
+    babel-core "^6.26.0"
+    babel-plugin-lodash "^3.3.2"
+    babel-plugin-module-resolver "^3.0.0"
+    babel-preset-env "^1.6.1"
+    cross-spawn "^6.0.4"
+    eslint "^4.16.0"
+    husky "^0.14.3"
+    jest "^22.1.4"
+    lint-staged "^6.1.0"
+    lodash.merge "^4.6.0"
+    npm-run-all "^4.1.2"
+    prettier "^1.10.2"
+    read-pkg-up "^3.0.0"
+    ts-jest "^22.0.2"
+    tslint "^5.9.1"
+    tslint-language-service "^0.9.8"
+    typescript "^2.7.1"
+    typesync "^0.2.5"
 
 any-observable@^0.2.0:
   version "0.2.0"
