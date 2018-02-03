@@ -6,6 +6,7 @@ const chalk = require('chalk');
 const glob = require('glob');
 const spawn = require('cross-spawn');
 
+const getRawArgs = require('./utils/getRawArgs');
 const logger = require('./utils/logger');
 
 const SIGNAL_MESSAGES = {
@@ -15,18 +16,12 @@ const SIGNAL_MESSAGES = {
     'Exited too early. Someone called "kill", "killall" or the system is shutting down.',
 };
 
-const getAvailableScripts = scriptsPath =>
+const getScriptsPathsForRoot = scriptsRoot =>
   glob
-    .sync(path.join(scriptsPath, '*'))
+    .sync(path.join(scriptsRoot, '*'))
     .map(path.normalize)
-    .map(scriptPath =>
-      scriptPath
-        .replace(scriptsPath, '')
-        .replace(/__tests__/, '')
-        .replace(/^\//, '')
-        .replace(/\.js$/, '')
-    )
-    .filter(scriptName => !!scriptName);
+    .filter(scriptPath => !scriptPath.includes('__tests__'))
+    .map(scriptPath => scriptPath.replace(/\.js$/, ''));
 const handleSignal = signal => {
   if (signal in SIGNAL_MESSAGES) {
     logger.info(SIGNAL_MESSAGES[signal]);
@@ -43,16 +38,24 @@ const handleResult = result => {
   process.exit(result.status);
 };
 
-const runScript = root => {
-  const scriptsPath = path.join(root, 'scripts');
-  const scriptsAvailable = getAvailableScripts(scriptsPath);
+const runScript = roots => {
+  const scriptsRoots = roots.map(root => path.join(root, 'scripts'));
+  const scriptsPaths = scriptsRoots
+    .map(scriptsRoot => getScriptsPathsForRoot(scriptsRoot))
+    .reduce((a, b) => a.concat(b), []);
+  const scriptsPathsForNames = scriptsPaths.reduce(
+    (acc, scriptPath) => ({
+      ...acc,
+      [path.basename(scriptPath)]: scriptPath,
+    }),
+    {}
+  );
+  const scriptsNames = Object.keys(scriptsPathsForNames);
+  const isValidScript = scriptName => scriptsNames.includes(scriptName);
 
-  const isValidScript = scriptName => scriptsAvailable.includes(scriptName);
-
-  const args = process.argv.slice(2); // eslint-disable-line no-magic-numbers
+  const args = getRawArgs();
   const scriptIndex = args.findIndex(isValidScript);
   const scriptName = scriptIndex === -1 ? args[0] : args[scriptIndex];
-
   if (!isValidScript(scriptName)) {
     logger.error(`Unknown script: ${chalk.bold(scriptName)}.`);
 
@@ -64,11 +67,7 @@ const runScript = root => {
 
   const result = spawn.sync(
     'node',
-    [
-      ...nodeArgs,
-      require.resolve(path.join(scriptsPath, scriptName)),
-      ...scriptArgs,
-    ],
+    [...nodeArgs, scriptsPathsForNames[scriptName], ...scriptArgs],
     {stdio: 'inherit'}
   );
 
