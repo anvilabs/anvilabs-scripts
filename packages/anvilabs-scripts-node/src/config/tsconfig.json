@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["es2017", "esnext.asynciterable"],
     "module": "es6",
     "moduleResolution": "node",
@@ -31,7 +31,5 @@
         "supressWhileTypeErrorsPresent": true
       }
     ]
-  },
-  "include": ["*/*.json", "src/**/*.js", "src/**/*.ts", "typings/**/*.d.ts"],
-  "exclude": ["node_modules", "src/**/__tests__"]
+  }
 }

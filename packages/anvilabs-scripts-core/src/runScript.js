@@ -32,7 +32,7 @@ const handleResult = result => {
     handleSignal(result.signal);
   }
   if (result.status > 0) {
-    logger.error(`Exit code: ${result.status}`);
+    logger.error(`Exit code: ${result.status}.`);
   }
 
   process.exit(result.status);
