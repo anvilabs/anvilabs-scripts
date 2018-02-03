@@ -28,8 +28,8 @@
     "extends": "semantic-release-monorepo"
   },
   "dependencies": {
-    "anvilabs-scripts-core": "^0.1.0-alpha.1",
-    "anvilabs-scripts-node": "^0.1.0-alpha.1",
+    "anvilabs-scripts-core": "^0.1.0-alpha.3",
+    "anvilabs-scripts-node": "^0.1.0-alpha.3",
     "awesome-typescript-loader": "^3.4.1",
     "backpack-core": "^0.5.0",
     "cache-loader": "^1.2.0",
