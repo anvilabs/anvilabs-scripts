@@ -4,6 +4,7 @@ const {
   hasFileRelative,
   getRawArgs,
   resolveBin,
+  resolveFromRoot,
 } = require('anvilabs-scripts-core/utils');
 const spawn = require('cross-spawn');
 
@@ -22,11 +23,9 @@ const configArgs = useBuiltinConfig
   : [];
 
 const useBuiltinProject =
-  !rawArgs.includes('-p') &&
-  !rawArgs.includes('--project') &&
-  !hasFileRelative('tsconfig.json');
+  !rawArgs.includes('-p') && !rawArgs.includes('--project');
 const projectArgs = useBuiltinProject
-  ? ['--project', hereRelative('../config/tsconfig.json')]
+  ? ['--project', resolveFromRoot('.')]
   : [];
 
 const result = spawn.sync(
