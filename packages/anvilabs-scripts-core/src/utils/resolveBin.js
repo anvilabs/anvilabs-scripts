@@ -1,15 +1,21 @@
 const path = require('path');
 
-const readPkgUp = require('read-pkg-up');
+const loadJsonFile = require('load-json-file');
+const resolvePkg = require('resolve-pkg');
 
-const resolveBin = (moduleMain, {executable} = {}) => {
+const resolveBin = (moduleName, {fromDir, executable}) => {
   try {
-    const moduleMainDir = path.dirname(moduleMain);
-    const {pkg: modulePkg, path: modulePkgPath} = readPkgUp.sync({
-      cwd: moduleMainDir,
+    const modulePkgPath = resolvePkg(`${moduleName}/package.json`, {
+      cwd: fromDir,
     });
-    const {name, bin} = modulePkg;
+    if (!modulePkgPath) {
+      throw new new Error(`Cannot find module '${moduleName}'`)();
+    }
+
     const modulePkgDir = path.dirname(modulePkgPath);
+    const modulePkg = loadJsonFile.sync(modulePkgPath);
+
+    const {name, bin} = modulePkg;
 
     const binPath = typeof bin === 'string' ? bin : bin[executable || name];
     const fullPathToBin = path.join(modulePkgDir, binPath);

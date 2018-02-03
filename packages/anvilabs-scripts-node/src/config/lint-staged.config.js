@@ -1,8 +1,8 @@
 const {resolveBin} = require('anvilabs-scripts-core/utils');
 
-const anvilabsScriptsNode = resolveBin(
-  require.resolve('anvilabs-scripts-node')
-);
+const anvilabsScriptsNode = resolveBin('anvilabs-scripts-node', {
+  fromDir: __dirname,
+});
 
 module.exports = {
   linters: {

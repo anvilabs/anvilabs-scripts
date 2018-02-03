@@ -40,7 +40,7 @@ const filesGiven = positionalArgs.length > 0;
 const filesToApply = filesGiven ? [] : ['.'];
 
 const result = spawn.sync(
-  resolveBin(require.resolve('eslint')),
+  resolveBin('eslint', {fromDir: __dirname}),
   [
     ...configArgs,
     ...ignoreArgs,

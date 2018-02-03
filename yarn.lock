@@ -434,22 +434,9 @@ ansicolors@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.2.1.tgz#be089599097b74a5c9c4a84a0cdbcdb62bd87aef"
 
-anvilabs-scripts-core@^0.1.0-alpha.1:
-  version "0.1.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.1.tgz#6908f30cf05f7b3a6111cf914e01ba93419b7896"
-  dependencies:
-    anvilabs-scripts-node "^0.0.0-development"
-    arrify "^1.0.1"
-    chalk "^2.3.0"
-    cross-spawn "^6.0.4"
-    glob "^7.1.2"
-    lodash.has "^4.5.2"
-    read-pkg-up "^3.0.0"
-    yargs-parser "^9.0.2"
-
-anvilabs-scripts-core@^0.1.0-alpha.3:
-  version "0.1.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.3.tgz#eb0623e710a94464f8046938e2db60d6d43b79e4"
+anvilabs-scripts-core@^0.1.0-alpha.4:
+  version "0.1.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.4.tgz#3b880979b78c4f3fa7c7d9dda7472d1807e9e82c"
   dependencies:
     arrify "^1.0.1"
     chalk "^2.3.0"
@@ -459,9 +446,9 @@ anvilabs-scripts-core@^0.1.0-alpha.3:
     read-pkg-up "^3.0.0"
     yargs-parser "^9.0.2"
 
-anvilabs-scripts-node@^0.1.0-alpha.3:
-  version "0.1.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.3.tgz#51c24320a015e21738bb300db089dbd62bf066a3"
+anvilabs-scripts-node@^0.1.0-alpha.4:
+  version "0.1.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.4.tgz#fc7d15722af7d93862bd0abbba9a2b7c5f85d719"
   dependencies:
     "@anvilabs/commitlint-config" "^1.0.0"
     "@anvilabs/eslint-config" "^17.2.2"
@@ -469,7 +456,7 @@ anvilabs-scripts-node@^0.1.0-alpha.3:
     "@anvilabs/tslint-config" "^1.2.3"
     "@commitlint/cli" "^6.1.0"
     "@types/jest" "^22.1.1"
-    anvilabs-scripts-core "^0.1.0-alpha.1"
+    anvilabs-scripts-core "^0.1.0-alpha.4"
     babel-core "^6.26.0"
     babel-plugin-lodash "^3.3.2"
     babel-plugin-module-resolver "^3.0.0"
@@ -498,7 +485,7 @@ anvilabs-scripts-node@^0.1.0-alpha.3:
     "@anvilabs/tslint-config" "^1.2.3"
     "@commitlint/cli" "^6.1.0"
     "@types/jest" "^22.1.1"
-    anvilabs-scripts-core "^0.1.0-alpha.3"
+    anvilabs-scripts-core "^0.1.0-alpha.4"
     babel-core "^6.26.0"
     babel-plugin-lodash "^3.3.2"
     babel-plugin-module-resolver "^3.0.0"

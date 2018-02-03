@@ -22,7 +22,7 @@ const buildCommandForScriptName = scriptName => {
 };
 
 const result = spawn.sync(
-  resolveBin(require.resolve('npm-run-all')),
+  resolveBin('npm-run-all', {fromDir: __dirname}),
   [
     '--aggregate-output',
     '--print-label',

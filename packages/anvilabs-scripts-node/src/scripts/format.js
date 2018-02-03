@@ -35,7 +35,7 @@ const writeArgs = rawArgs.includes('--no-write') ? [] : ['--write'];
 const filesToApply = positionalArgs.length ? [] : ['**/*.+(js|ts|json|md)'];
 
 const result = spawn.sync(
-  resolveBin(require.resolve('prettier')),
+  resolveBin('prettier', {fromDir: __dirname}),
   [...configArgs, ...ignorePathArgs, ...writeArgs, ...rawArgs, ...filesToApply],
   {stdio: 'inherit'}
 );

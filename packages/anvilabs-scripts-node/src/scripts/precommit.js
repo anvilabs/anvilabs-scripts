@@ -24,7 +24,7 @@ const configArgs = useBuiltinConfig
   : [];
 
 const result = spawn.sync(
-  resolveBin(require.resolve('lint-staged')),
+  resolveBin('lint-staged', {fromDir: __dirname}),
   [...configArgs, ...rawArgs],
   {stdio: 'inherit'}
 );

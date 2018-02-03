@@ -16,7 +16,10 @@ const extendsArgs = useExtends
   : [];
 
 const result = spawn.sync(
-  resolveBin(require.resolve('@commitlint/cli'), {executable: 'commitlint'}),
+  resolveBin('@commitlint/cli', {
+    fromDir: __dirname,
+    executable: 'commitlint',
+  }),
   [...extendsArgs, '--edit'],
   {
     stdio: 'inherit',

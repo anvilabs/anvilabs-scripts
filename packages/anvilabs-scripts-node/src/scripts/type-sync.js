@@ -2,7 +2,7 @@ const {resolveBin, resolveFromRoot} = require('anvilabs-scripts-core/utils');
 const spawn = require('cross-spawn');
 
 const typesyncResult = spawn.sync(
-  resolveBin(require.resolve('typesync')),
+  resolveBin('typesync', {fromDir: __dirname}),
   [resolveFromRoot('package.json')],
   {
     stdio: 'inherit',

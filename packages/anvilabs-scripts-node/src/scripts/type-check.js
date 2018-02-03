@@ -2,7 +2,10 @@ const {resolveBin, resolveFromRoot} = require('anvilabs-scripts-core/utils');
 const spawn = require('cross-spawn');
 
 const result = spawn.sync(
-  resolveBin(require.resolve('typescript'), {executable: 'tsc'}),
+  resolveBin('typescript', {
+    fromDir: __dirname,
+    executable: 'tsc',
+  }),
   ['--project', resolveFromRoot('tsconfig.json'), '--noEmit'],
   {
     stdio: 'inherit',

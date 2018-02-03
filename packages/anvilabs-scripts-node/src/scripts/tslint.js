@@ -30,7 +30,7 @@ const projectArgs = useBuiltinProject
   : [];
 
 const result = spawn.sync(
-  resolveBin(require.resolve('tslint')),
+  resolveBin('tslint', {fromDir: __dirname}),
   [...configArgs, ...projectArgs, '--format', 'stylish', ...rawArgs],
   {stdio: 'inherit'}
 );
