@@ -17,12 +17,13 @@
     typescript-eslint-parser "^12.0.0"
 
 "@anvilabs/eslint-config@^17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@anvilabs/eslint-config/-/eslint-config-17.2.1.tgz#6c3c8a17e27621c32d82a05e63d4da4b26c03ada"
+  version "17.2.2"
+  resolved "https://registry.yarnpkg.com/@anvilabs/eslint-config/-/eslint-config-17.2.2.tgz#bbae6e190e0acc87979f6691cff9e19bb4138acb"
   dependencies:
     babel-eslint "^8.2.1"
     eslint-config-airbnb-base "^12.1.0"
     eslint-config-prettier "^2.9.0"
+    eslint-import-resolver-babel-module "^4.0.0"
     eslint-plugin-babel "^4.1.2"
     eslint-plugin-eslint-comments "^2.0.2"
     eslint-plugin-flowtype "^2.42.0"
@@ -104,10 +105,10 @@
     to-fast-properties "^2.0.0"
 
 "@commitlint/cli@^6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-6.0.5.tgz#c159c41434d24167c2f52c29e81cffc1959a6d0f"
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-6.1.0.tgz#0a545088b4e0268cca1dca7e8ccd95bd55847b88"
   dependencies:
-    "@commitlint/core" "^6.0.5"
+    "@commitlint/core" "^6.1.0"
     babel-polyfill "6.26.0"
     chalk "2.3.0"
     get-stdin "5.0.1"
@@ -116,19 +117,19 @@
     meow "3.7.0"
 
 "@commitlint/config-conventional@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-6.0.4.tgz#f5332c3aaf5423f2fa62287849859a9b769484f3"
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-6.1.0.tgz#1f1c1577f1ca10f112e4346d9c94af1f8936f0c5"
 
-"@commitlint/core@^6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-6.0.5.tgz#a0f174f08a377eb9e5571bf31c2c9f60964a6ed9"
+"@commitlint/core@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-6.1.0.tgz#41b2482044039435cb9673995598717038f2f6d0"
   dependencies:
-    "@commitlint/execute-rule" "^6.0.4"
-    "@commitlint/is-ignored" "^6.0.4"
-    "@commitlint/parse" "^6.0.4"
-    "@commitlint/resolve-extends" "^6.0.4"
-    "@commitlint/rules" "^6.0.4"
-    "@commitlint/top-level" "^6.0.5"
+    "@commitlint/execute-rule" "^6.1.0"
+    "@commitlint/is-ignored" "^6.1.0"
+    "@commitlint/parse" "^6.1.0"
+    "@commitlint/resolve-extends" "^6.1.0"
+    "@commitlint/rules" "^6.1.0"
+    "@commitlint/top-level" "^6.1.0"
     "@marionebl/sander" "^0.6.0"
     babel-runtime "^6.23.0"
     chalk "^2.0.1"
@@ -140,9 +141,9 @@
     lodash.topairs "4.3.0"
     resolve-from "4.0.0"
 
-"@commitlint/ensure@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-6.0.4.tgz#c5ae6d0a24797e58caceee61608c6ac9ced64691"
+"@commitlint/ensure@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-6.1.0.tgz#567f029d816b6b5ca16bf62499230324c99a8fa9"
   dependencies:
     lodash.camelcase "4.3.0"
     lodash.kebabcase "4.1.1"
@@ -150,32 +151,32 @@
     lodash.startcase "4.4.0"
     lodash.upperfirst "4.3.1"
 
-"@commitlint/execute-rule@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-6.0.4.tgz#5db080be51b2cc057028ce24a1cd9142283774fc"
+"@commitlint/execute-rule@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-6.1.0.tgz#4f56e5855a5e25ebcbc985d2209ea29f1bb89774"
   dependencies:
     babel-runtime "6.26.0"
 
-"@commitlint/is-ignored@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/is-ignored/-/is-ignored-6.0.4.tgz#cc4cde7be8d101e848fa70b37381687fa837c417"
+"@commitlint/is-ignored@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/is-ignored/-/is-ignored-6.1.0.tgz#0b86f8b37dfc693d6d66760b36fee1aba50882d8"
   dependencies:
     semver "5.5.0"
 
-"@commitlint/message@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/message/-/message-6.0.4.tgz#80fe320285cab5f0f4ab3847e8d3b98a3fd1e389"
+"@commitlint/message@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/message/-/message-6.1.0.tgz#ee4ca775ad876ba59d23d02ba386c9b9038969e3"
 
-"@commitlint/parse@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/parse/-/parse-6.0.4.tgz#3d7403b024200d32d66e913ee464eaf46bbac075"
+"@commitlint/parse@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/parse/-/parse-6.1.0.tgz#e4ba58ab632371078b9b9609ae7af03c2e7b3a3e"
   dependencies:
     conventional-changelog-angular "^1.3.3"
     conventional-commits-parser "^2.1.0"
 
-"@commitlint/resolve-extends@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-6.0.4.tgz#8cce624e856df7582d5621c882e83f69b44c18c4"
+"@commitlint/resolve-extends@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-6.1.0.tgz#b3d92f69e3746e94de0023f8be3b1f605a20839a"
   dependencies:
     babel-runtime "6.26.0"
     lodash.merge "4.6.0"
@@ -184,22 +185,22 @@
     resolve-from "^4.0.0"
     resolve-global "^0.1.0"
 
-"@commitlint/rules@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/rules/-/rules-6.0.4.tgz#6891d7e37908d6438dc3b382f193774ab4a36479"
+"@commitlint/rules@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/rules/-/rules-6.1.0.tgz#564b69503a3a4d09d03a9a077731c9655ee8f4df"
   dependencies:
-    "@commitlint/ensure" "^6.0.4"
-    "@commitlint/message" "^6.0.4"
-    "@commitlint/to-lines" "^6.0.4"
+    "@commitlint/ensure" "^6.1.0"
+    "@commitlint/message" "^6.1.0"
+    "@commitlint/to-lines" "^6.1.0"
     babel-runtime "^6.23.0"
 
-"@commitlint/to-lines@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@commitlint/to-lines/-/to-lines-6.0.4.tgz#c0bb6ca0b5c5f565f18d9747de12067cb2c4cc34"
+"@commitlint/to-lines@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/to-lines/-/to-lines-6.1.0.tgz#9e130254c980dbd456e1693df1082a77ba7114a0"
 
-"@commitlint/top-level@^6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@commitlint/top-level/-/top-level-6.0.5.tgz#01cac031f7452c0bebfda75d6ef7fb79d1714f81"
+"@commitlint/top-level@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/top-level/-/top-level-6.1.0.tgz#b420c1e9166df3afa000186a42b7f49cae4014cc"
   dependencies:
     find-up "^2.1.0"
 
@@ -340,9 +341,9 @@ acorn@^4.0.3:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-acorn@^5.0.0, acorn@^5.2.1, acorn@^5.3.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.4.0.tgz#51c581c9d4b1943dda59a3e73bcf02661ac727ea"
+acorn@^5.0.0, acorn@^5.3.0, acorn@^5.4.0:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.4.1.tgz#fdc58d9d17f4a4e98d102ded826a9b9759125102"
 
 add-stream@^1.0.0:
   version "1.0.0"
@@ -429,8 +430,22 @@ ansicolors@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.2.1.tgz#be089599097b74a5c9c4a84a0cdbcdb62bd87aef"
 
-"anvilabs-scripts-node@file:./packages/anvilabs-scripts-node":
-  version "0.0.0-development"
+anvilabs-scripts-core@^0.1.0-alpha.1:
+  version "0.1.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.1.tgz#6908f30cf05f7b3a6111cf914e01ba93419b7896"
+  dependencies:
+    anvilabs-scripts-node "^0.0.0-development"
+    arrify "^1.0.1"
+    chalk "^2.3.0"
+    cross-spawn "^6.0.4"
+    glob "^7.1.2"
+    lodash.has "^4.5.2"
+    read-pkg-up "^3.0.0"
+    yargs-parser "^9.0.2"
+
+anvilabs-scripts-node@^0.1.0-alpha.1:
+  version "0.1.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.1.tgz#44522a007425f70b1ea5d6740865d7e04057a9d2"
   dependencies:
     "@anvilabs/commitlint-config" "^1.0.0"
     "@anvilabs/eslint-config" "^17.2.1"
@@ -446,6 +461,33 @@ ansicolors@~0.2.1:
     eslint "^4.16.0"
     husky "^0.14.3"
     jest "^22.1.4"
+    lint-staged "^6.1.0"
+    lodash.merge "^4.6.0"
+    npm-run-all "^4.1.2"
+    prettier "^1.10.2"
+    ts-jest "^22.0.2"
+    tslint "^5.9.1"
+    tslint-language-service "^0.9.8"
+    typescript "^2.7.1"
+
+"anvilabs-scripts-node@file:./packages/anvilabs-scripts-node":
+  version "0.0.0-development"
+  dependencies:
+    "@anvilabs/commitlint-config" "^1.0.0"
+    "@anvilabs/eslint-config" "^17.2.1"
+    "@anvilabs/eslint-config-typescript" "^17.2.1"
+    "@anvilabs/tslint-config" "^1.2.3"
+    "@commitlint/cli" "^6.0.5"
+    anvilabs-scripts-core "^0.1.0-alpha.1"
+    babel-core "^6.26.0"
+    babel-plugin-lodash "^3.3.2"
+    babel-plugin-module-resolver "^3.0.0"
+    babel-preset-env "^1.6.1"
+    cross-spawn "^6.0.4"
+    eslint "^4.16.0"
+    husky "^0.14.3"
+    jest "^22.1.4"
+    lint-staged "^6.1.0"
     lodash.merge "^4.6.0"
     npm-run-all "^4.1.2"
     prettier "^1.10.2"
@@ -696,8 +738,8 @@ babel-eslint@^8.2.1:
     eslint-visitor-keys "^1.0.0"
 
 babel-generator@^6.18.0, babel-generator@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.0.tgz#ac1ae20070b79f6e3ca1d3269613053774f20dc5"
+  version "6.26.1"
+  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.1.tgz#1844408d3b8f0d35a404ea7ac180f087a601bd90"
   dependencies:
     babel-messages "^6.23.0"
     babel-runtime "^6.26.0"
@@ -705,7 +747,7 @@ babel-generator@^6.18.0, babel-generator@^6.26.0:
     detect-indent "^4.0.0"
     jsesc "^1.3.0"
     lodash "^4.17.4"
-    source-map "^0.5.6"
+    source-map "^0.5.7"
     trim-right "^1.0.1"
 
 babel-helper-builder-binary-assignment-operator-visitor@^6.24.1:
@@ -2545,6 +2587,13 @@ eslint-config-prettier@^2.9.0:
   dependencies:
     get-stdin "^5.0.1"
 
+eslint-import-resolver-babel-module@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-babel-module/-/eslint-import-resolver-babel-module-4.0.0.tgz#1c596f7fb9815050292c8750d523b27a5444b4bf"
+  dependencies:
+    pkg-up "^2.0.0"
+    resolve "^1.4.0"
+
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -2659,8 +2708,8 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
 eslint@^4.16.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.16.0.tgz#934ada9e98715e1d7bbfd6f6f0519ed2fab35cc1"
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.17.0.tgz#dc24bb51ede48df629be7031c71d9dc0ee4f3ddf"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -2701,10 +2750,10 @@ eslint@^4.16.0:
     text-table "~0.2.0"
 
 espree@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.2.tgz#756ada8b979e9dcfcdb30aad8d1a9304a905e1ca"
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.3.tgz#931e0af64e7fbbed26b050a29daad1fc64799fa6"
   dependencies:
-    acorn "^5.2.1"
+    acorn "^5.4.0"
     acorn-jsx "^3.0.0"
 
 esprima@^3.1.3:
@@ -4957,8 +5006,8 @@ mime@^2.0.3:
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.2.0.tgz#161e541965551d3b549fa1114391e3a3d55b923b"
 
 mimic-fn@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
 minimalistic-assert@^1.0.0:
   version "1.0.0"
@@ -5723,8 +5772,8 @@ qs@~6.5.1:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
 
 query-string@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.0.1.tgz#6e2b86fe0e08aef682ecbe86e85834765402bd88"
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.0.tgz#9583b15fd1307f899e973ed418886426a9976469"
   dependencies:
     decode-uri-component "^0.2.0"
     object-assign "^4.1.0"
@@ -6415,7 +6464,7 @@ source-map@^0.4.4:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.6:
+source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.1, source-map@~0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
@@ -6881,8 +6930,8 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
 ts-jest@^22.0.2:
-  version "22.0.2"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-22.0.2.tgz#d83eb2e3a2a4f3be098afea5a06d38547d528c72"
+  version "22.0.3"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-22.0.3.tgz#4d30f42c1b26a78d438ad908f9b0bcb4b1e6e32b"
   dependencies:
     babel-core "^6.24.1"
     babel-plugin-istanbul "^4.1.4"
@@ -6937,8 +6986,8 @@ tslint@^5.9.1:
     tsutils "^2.12.1"
 
 tsutils@^2.12.1:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.20.0.tgz#303394064bc80be8ee04e10b8609ae852e9312d3"
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.21.0.tgz#43466a2283a0abce64e2209bc732ad72f8a04fab"
   dependencies:
     tslib "^1.8.1"
 

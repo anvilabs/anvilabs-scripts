@@ -6,11 +6,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "workspaces": [
-    "packages/anvilabs-scripts-core",
-    "packages/anvilabs-scripts-node",
-    "packages/anvilabs-scripts-backpack"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
     "format": "anvilabs-scripts-node format",
     "lint": "anvilabs-scripts-node eslint",
