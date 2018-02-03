@@ -16,8 +16,9 @@ $ npm install anvilabs-scripts-x --save-dev
 ```
 
 Available toolboxes include:
-- [`anvilabs-scripts-node`](./packages/anvilabs-scripts-node).
-- [`anvilabs-scripts-backpack`](./packages/anvilabs-scripts-backpack).
+
+* [`anvilabs-scripts-node`](./packages/anvilabs-scripts-node).
+* [`anvilabs-scripts-backpack`](./packages/anvilabs-scripts-backpack).
 
 ## Usage
 
@@ -39,7 +40,7 @@ contents of:
 
 ```js
 module.exports = {
-  extends: './node_modules/anvilabs-scripts-node/eslint.js'
+  extends: './node_modules/anvilabs-scripts-node/eslint.js',
 };
 ```
 
@@ -65,9 +66,9 @@ module.exports = Object.assign(jestConfig, {
 
 Inspired by:
 
-- [react-scripts](https://github.com/facebook/create-react-app/tree/next/packages/react-scripts)
-- [kcd-scripts](https://github.com/kentcdodds/kcd-scripts)
-- [d-scripts](https://github.com/trae/d-scripts)
+* [react-scripts](https://github.com/facebook/create-react-app/tree/next/packages/react-scripts)
+* [kcd-scripts](https://github.com/kentcdodds/kcd-scripts)
+* [d-scripts](https://github.com/trae/d-scripts)
 
 ## License
 

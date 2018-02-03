@@ -14,5 +14,5 @@
     ".eslintcache": true
   },
 
-  "prettier.disableLanguages": ["javascript"],
+  "prettier.disableLanguages": ["javascript"]
 }
