@@ -40,7 +40,7 @@ contents of:
 
 ```js
 module.exports = {
-  extends: './node_modules/anvilabs-scripts-node/eslint.js',
+  extends: 'anvilabs-scripts-node/eslint',
 };
 ```
 
@@ -52,14 +52,45 @@ Or, for `babel`, a `.babelrc` with:
 }
 ```
 
-Or, for `jest`:
+Or, for `jest`, a `jest.config.js` with:
 
 ```js
-const jestConfig = require('anvilabs-scripts/jest');
-
-module.exports = Object.assign(jestConfig, {
-  // your overrides here
+module.exports = {
+  ...require('anvilabs-scripts-node/jest'),
+  // your overrides
 });
+```
+
+Or, for `tsc`, a `tsconfig.json` with:
+
+```json
+{
+  "extends": "./node_modules/anvilabs-scripts-node/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./"
+  },
+  "include": ["*/*.json", "src/**/*.js", "src/**/*.ts", "typings/**/*.d.ts"],
+  "exclude": ["node_modules", "src/**/__tests__"]
+}
+```
+
+Or, for `tslint`, a `tslint.json` with:
+
+```json
+{
+  "extends": "anvilabs-scripts-node/tslint.json"
+}
+```
+
+Or, for `backpack`, a `backpack.config.js` with:
+
+```js
+module.exports = {
+  webpack: (config, options, webpack) => ({
+    ...require('anvilabs-scripts-backpack/backpack').webpack(config),
+    // your overrides
+  }),
+};
 ```
 
 ## Credits
