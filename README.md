@@ -3,11 +3,13 @@
 [![Build Status](https://img.shields.io/travis/anvilabs/anvilabs-scripts.svg)](https://travis-ci.org/anvilabs/anvilabs-scripts)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Anvilabs' CLI toolboxes for common scripts of our Node.JS / Backpack projects. See individual packages in [packages](./packages/).
+Opinionated CLI toolkits for our Node / Backpack projects. See individual packages in [packages](./packages/).
+
+> **NOTE**: we use TypeScript in our projects, so these toolkits are specifically tailored for usage with TypeScript.
 
 ## Installation
 
-Install the wanted toolbox as a development dependency:
+Install the wanted toolkit as a development dependency:
 
 ```bash
 $ yarn add anvilabs-scripts-x --dev
@@ -15,22 +17,26 @@ $ yarn add anvilabs-scripts-x --dev
 $ npm install anvilabs-scripts-x --save-dev
 ```
 
-Available toolboxes include:
+> **NOTE**: it includes all the dependencies (babel, eslint, tslint, typescript, prettier, jest, etc) so you don't have to install them.
+
+Available toolkits include:
 
 * [`anvilabs-scripts-node`](./packages/anvilabs-scripts-node).
 * [`anvilabs-scripts-backpack`](./packages/anvilabs-scripts-backpack).
 
 ## Usage
 
-The toolboxes hosted in these repo expose binaries called `anvilabs-scripts-x` (e.g. `anvilabs-scripts-node`). You can find all available scripts in the `src/scripts` of the respective package in [packages](./packages/).
+The packages hosted in these repo expose binaries called `anvilabs-scripts-x` (e.g. `anvilabs-scripts-node`):
 
-This project actually dogfoods itself. If you look in the `package.json`, you'll
-find scripts with `anvilabs-scripts-node {scriptName}`. This serves as an example of some
-of the things you can do with `anvilabs-scripts-node` and other toolboxes in this repo.
+```bash
+$ anvilabs-scripts-x [script] [options]
+```
+
+You can find all available scripts in the `src/scripts` of the respective package in [packages](./packages/).
 
 ### Overriding Config
 
-You can specify your own config for some scripts bundled with a toolbox. There are various ways that it works, but basically if you want to have your own config for something, just add the config and the toolbox will use that instead of it's own internal config. In addition, all toolboxes expose their configs so you can use them and override only the parts of the config you need to.
+You can specify your own config for some scripts bundled with a given toolkit. There are various ways that it works, but basically if you want to have your own config for something, just add the config and the toolkit will use that instead of it's own internal config. In addition, all toolkits expose their configs so you can use them and override only the parts of the config you need to.
 
 This can be a very helpful way to make editor integration work for tools like
 ESLint which require project-based ESLint configuration to be present to work.
