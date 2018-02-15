@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@anvilabs/commitlint-config": "^1.0.0",
-    "@anvilabs/eslint-config": "^17.2.2",
-    "@anvilabs/eslint-config-typescript": "^17.2.1",
+    "@anvilabs/eslint-config": "^17.3.0",
+    "@anvilabs/eslint-config-typescript": "^17.3.0",
     "@anvilabs/tslint-config": "^1.2.3",
     "@commitlint/cli": "^6.1.0",
     "@types/jest": "^22.1.1",
