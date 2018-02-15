@@ -35,7 +35,7 @@
     "cache-loader": "^1.2.0",
     "cross-spawn": "^6.0.4",
     "resolve-pkg": "^1.0.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0"
   },
   "devDependencies": {
     "anvilabs-scripts-core": "file:./packages/anvilabs-scripts-core",
