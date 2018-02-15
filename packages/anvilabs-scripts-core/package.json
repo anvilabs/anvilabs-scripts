@@ -36,8 +36,7 @@
     "yargs-parser": "^9.0.2"
   },
   "devDependencies": {
-    "@semantic-release/npm": "2.6.0",
-    "semantic-release": "^12.4.1",
+    "semantic-release": "13.2.0",
     "semantic-release-monorepo": "^4.2.1"
   }
 }

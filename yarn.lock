@@ -255,20 +255,20 @@
     parse-github-url "^1.0.1"
     url-join "^3.0.0"
 
-"@semantic-release/npm@2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-2.6.0.tgz#98e8ad28b57a755ad412cfd8d71a8f7d992037e2"
+"@semantic-release/github@^4.0.2":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-4.0.3.tgz#e3ecd1f46221e9688a6686a59c3703be2e498c9e"
   dependencies:
+    "@octokit/rest" "^14.0.3"
     "@semantic-release/error" "^2.1.0"
     debug "^3.1.0"
-    execa "^0.8.0"
     fs-extra "^5.0.0"
+    globby "^7.1.1"
     lodash "^4.17.4"
-    nerf-dart "^1.0.0"
-    npm-conf "^1.1.3"
-    npm-registry-client "^8.5.0"
-    read-pkg "^3.0.0"
-    registry-auth-token "^3.3.1"
+    mime "^2.0.3"
+    p-reduce "^1.0.0"
+    parse-github-url "^1.0.1"
+    url-join "^4.0.0"
 
 "@semantic-release/npm@^2.0.0":
   version "2.7.0"
@@ -283,6 +283,19 @@
     normalize-url "^2.0.1"
     npm-conf "^1.1.3"
     npm-registry-client "^8.5.0"
+    read-pkg "^3.0.0"
+    registry-auth-token "^3.3.1"
+
+"@semantic-release/npm@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-3.0.2.tgz#b2063ff8baa217a808fe057428efbd8fc8aa9204"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    execa "^0.9.0"
+    fs-extra "^5.0.0"
+    lodash "^4.17.4"
+    nerf-dart "^1.0.0"
+    normalize-url "^2.0.1"
     read-pkg "^3.0.0"
     registry-auth-token "^3.3.1"
 
@@ -434,21 +447,23 @@ ansicolors@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.2.1.tgz#be089599097b74a5c9c4a84a0cdbcdb62bd87aef"
 
-anvilabs-scripts-core@^0.1.0-alpha.4:
-  version "0.1.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.4.tgz#3b880979b78c4f3fa7c7d9dda7472d1807e9e82c"
+anvilabs-scripts-core@^0.1.0-alpha.9:
+  version "0.1.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-core/-/anvilabs-scripts-core-0.1.0-alpha.9.tgz#1439a83b6a8377ef393c091e31a83f0e6f6cedc1"
   dependencies:
     arrify "^1.0.1"
     chalk "^2.3.0"
     cross-spawn "^6.0.4"
     glob "^7.1.2"
+    load-json-file "^4.0.0"
     lodash.has "^4.5.2"
     read-pkg-up "^3.0.0"
+    resolve-pkg "^1.0.0"
     yargs-parser "^9.0.2"
 
-anvilabs-scripts-node@^0.1.0-alpha.4:
-  version "0.1.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.4.tgz#fc7d15722af7d93862bd0abbba9a2b7c5f85d719"
+anvilabs-scripts-node@^0.1.0-alpha.9:
+  version "0.1.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/anvilabs-scripts-node/-/anvilabs-scripts-node-0.1.0-alpha.9.tgz#2d02cee07f47054cd172a3a7e7248ba19be7c720"
   dependencies:
     "@anvilabs/commitlint-config" "^1.0.0"
     "@anvilabs/eslint-config" "^17.2.2"
@@ -456,7 +471,7 @@ anvilabs-scripts-node@^0.1.0-alpha.4:
     "@anvilabs/tslint-config" "^1.2.3"
     "@commitlint/cli" "^6.1.0"
     "@types/jest" "^22.1.1"
-    anvilabs-scripts-core "^0.1.0-alpha.4"
+    anvilabs-scripts-core "^0.1.0-alpha.9"
     babel-core "^6.26.0"
     babel-plugin-lodash "^3.3.2"
     babel-plugin-module-resolver "^3.0.0"
@@ -485,7 +500,7 @@ anvilabs-scripts-node@^0.1.0-alpha.4:
     "@anvilabs/tslint-config" "^1.2.3"
     "@commitlint/cli" "^6.1.0"
     "@types/jest" "^22.1.1"
-    anvilabs-scripts-core "^0.1.0-alpha.4"
+    anvilabs-scripts-core "^0.1.0-alpha.9"
     babel-core "^6.26.0"
     babel-plugin-lodash "^3.3.2"
     babel-plugin-module-resolver "^3.0.0"
@@ -3330,6 +3345,12 @@ git-up@^2.0.0:
 git-url-parse@^8.0.0:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/git-url-parse/-/git-url-parse-8.0.1.tgz#eb3fa427e294d214d9abbeb59637cc8646279c00"
+  dependencies:
+    git-up "^2.0.0"
+
+git-url-parse@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/git-url-parse/-/git-url-parse-8.1.0.tgz#d1ee09213efce5d8dc7a21bb03f17cfe0c111122"
   dependencies:
     git-up "^2.0.0"
 
@@ -6312,6 +6333,36 @@ semantic-release-plugin-decorators@^1.2.1:
     import-from "^2.1.0"
     lodash "^4.17.4"
 
+semantic-release@13.2.0:
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-13.2.0.tgz#e3645309054483a0dc7772034e1d309da8f14b4d"
+  dependencies:
+    "@semantic-release/commit-analyzer" "^5.0.0"
+    "@semantic-release/error" "^2.1.0"
+    "@semantic-release/github" "^4.0.2"
+    "@semantic-release/npm" "^3.0.0"
+    "@semantic-release/release-notes-generator" "^6.0.0"
+    aggregate-error "^1.0.0"
+    chalk "^2.3.0"
+    commander "^2.11.0"
+    cosmiconfig "^4.0.0"
+    debug "^3.1.0"
+    env-ci "^1.0.0"
+    execa "^0.9.0"
+    get-stream "^3.0.0"
+    git-log-parser "^1.2.0"
+    git-url-parse "^8.1.0"
+    hook-std "^0.4.0"
+    lodash "^4.17.4"
+    marked "^0.3.9"
+    marked-terminal "^2.0.0"
+    p-locate "^2.0.0"
+    p-reduce "^1.0.0"
+    p-reflect "^1.0.0"
+    read-pkg-up "^3.0.0"
+    resolve-from "^4.0.0"
+    semver "^5.4.1"
+
 semantic-release@^12.4.1:
   version "12.4.1"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-12.4.1.tgz#4faeee44fe7fbebbc7af8cc9e3522eb7877a0260"
@@ -7187,6 +7238,10 @@ urix@^0.1.0:
 url-join@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-3.0.0.tgz#26e8113ace195ea30d0fc38186e45400f9cea672"
+
+url-join@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
